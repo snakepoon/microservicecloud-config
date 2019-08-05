@@ -10,12 +10,12 @@ spring:
   profiles: dev
     application: 
       name: microservicecloud-config-dept-client
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloudDB03
-    username: root
-    password: root
+    datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: org.gjt.mm.mysql.Driver
+      url: jdbc:mysql://localhost:3306/clouddb03
+      username: root
+      password: root
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
@@ -44,12 +44,12 @@ spring:
   profiles: test
     application: 
       name: microservicecloud-config-dept-client
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloudDB02
-    username: root
-    password: root
+    datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: org.gjt.mm.mysql.Driver
+      url: jdbc:mysql://localhost:3306/clouddb02
+      username: root
+      password: root
   
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
